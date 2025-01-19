@@ -21,10 +21,10 @@
 </script>
 
 <template>
-    <div :class="className">
+    <div :class="className" @click="open = !open">
         <button disabled @click="send">Вопрос №{{ num }}</button>
 
-        <div @click="open = !open" :class="[className + '__question', { delete: del ? 'delete' : '' }]">
+        <div :class="[className + '__question', { delete: del ? 'delete' : '' }]">
             {{ num + '. ' + question }}
         </div>
         <div :class="[className + '__answer', {active: open ? 'active' : ''}]">
