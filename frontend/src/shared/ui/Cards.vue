@@ -55,6 +55,7 @@
             padding: 20px;
             border: 1px solid #0e0e0e;
             border-top: 1px solid transparent;
+            background-color: aliceblue;background-color: aliceblue;
         }
 
         .active {
